@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Dante Mommers
+  Sanne 't Hooft (vervangen door jouw naam)
 
   #### Je startniveau:
-  Rood / blauw
+  hier je startniveau (kies uit zwart, rood óf blauw)
 
   #### Je focus:
-  surface plane (bling bling)
+  hier je focus (kies uit responsive óf surface plane)
  
 </details>
 
@@ -36,8 +36,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  nike.com
-  
+  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
