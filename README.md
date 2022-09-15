@@ -39,11 +39,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.nike.com/nl/?cp=63928816257_search_%7cnike%7c10582771586%7c104693151076%7ce%7cc%7cNL%7cpure%7c452284024734&ds_rl=1252249&gclid=Cj0KCQjw39uYBhCLARIsAD_SzMQqJ0QOnvRCPfD9azePjZxFqYFvjoEmXgwJnNdDy6XgYrRuCUlvcqAaAtfSEALw_wcB&gclsrc=aw.ds
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  Home Pagina 
   <img src="readme-images/screenshot1.PNG" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Schoenen Pagina  
   <img src="readme-images/screenshot2.PNG" width="375px" alt="omschrijving van de pagina">
  
 </details>
@@ -91,13 +91,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/screenshot3.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/screenshot4.png" width="375px" alt="breakdown van een dynamisch deel">
 
 </details>
 
@@ -111,26 +108,32 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  Het meeste ging erg goed. ik had eerst moeite met grid en de @media. maar dat ging met behulp van de studentenassistent weer goed
+  <img src="readme-images/screenshot5.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1      
+  | Ik wil even weten of ik spans op de juiste manier gebruik. en of de fouten die ik krijg na het valideren van de HTML of ik daar wat mee moet doen.          
+  |           
 
+  | student 2          | student 3    | student 4        |
+  | ---                | ---          | ---              |
+  | en dit             | en ik dit    | en dan ik dat    |
+  | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | ...                | ...          | ...              |
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Mijn spans moet ik verandere in Div omdat ik spans gebruikte op een plek waar ik divjes moest gebruiken. spans = inline, div = block
+  - P's die links horen te zijn verandere in A'tjes
+  - Nav gebruiken inplaatsvan Span
+  - Button verandere in A'tjes (behalve eerste op de eerste pagina)
+  - Hr weghalen en Border gebruiken
+  - Footer - Spans verandere in Details
+  - Read.me Nu bijwerken
 
 </details>
 
