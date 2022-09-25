@@ -55,6 +55,25 @@ body {
 	margin: 0;
 }
 
+body.toonMenu {
+	overflow: hidden;
+}
+
+body.toonMenu .PageOne section:first-of-type {
+	z-index: -1;
+}
+
+body.toonMenu header:nth-of-type(2) > nav:nth-of-type(1) nav {
+	transform:translatex(0);
+	transition:transform .3s;
+	animation-timing-function: ease-in;
+	transition-delay: .1s;
+}
+
+body.toonMenu  header:nth-of-type(2) > nav:nth-of-type(1)::before {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
 h1 {
 	font-family: Futura Bold, "Helvetica Neue";
 	font-size: var(--text-size-h1);
@@ -79,14 +98,20 @@ h3 {
 
 p,
 a,
-button {
+h4,
+button,
+details {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: var(--text-size-p);
 }
 
-.PageOne /*  Main Margin eerste pagina */
-	{
+a {
+	text-decoration: none;
+}
+
+.PageOne /*  Main Margin eerste pagina */ {
 	margin: 6%;
+	position: relative;
 }
 
 /****************/
@@ -94,11 +119,11 @@ button {
 /****************/
 
 header a {
-	text-decoration: none;
 	color: var(--color-background-dark);
 }
 
 header:first-of-type {
+	position: relative;
 	display: none;
 	background-color: var(--color-background-light-grey);
 	justify-content: space-between;
@@ -107,32 +132,128 @@ header:first-of-type {
 	padding: 0 6%;
 }
 
-header:first-of-type span:first-of-type {
+header:first-of-type div {
 	justify-self: flex-start;
 }
 
-header:first-of-type span:last-of-type {
+header:first-of-type nav {
 	display: flex;
 	justify-self: flex-end;
 	flex-direction: row;
 }
 
-header:first-of-type span img {
+header:first-of-type div img {
 	width: 24px;
 	margin: 0.2rem 0.5rem;
 }
 
-header:first-of-type span p,
-header:first-of-type span hr {
+header:first-of-type nav a {
 	font-size: var(--text-size-small);
-	margin: 0.2rem 0.5rem;
+	margin: 0.2rem 0.4rem;
+	padding-right: 0.6rem;
+	border-right: 1px solid var(--color-background-dark);
 }
 
+header:first-of-type nav a:last-of-type {
+	padding-right: 0;
+	border-right: 0;
+}
 
 header:nth-of-type(2) nav:nth-of-type(1) {
 	display: flex;
 	justify-content: flex-end;
 	margin: 5px 6%;
+	transition: all .3s;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+header:nth-of-type(2) > nav:nth-of-type(1)::before {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0);
+	transition: .3s;
+	pointer-events: none;
+}
+
+header:nth-of-type(2) nav:nth-of-type(1) nav {
+	z-index: 2;
+	margin: 0;
+	padding: 1rem 8% 0 7rem;
+	position: fixed;
+	right:0;
+	top:0;
+	bottom:0;
+	background-color: var(--color-background);
+	transform:translatex(107%);
+	transition:transform .3s;
+	animation-timing-function: ease;
+}
+
+header:nth-of-type(2) nav:nth-of-type(1) nav ul { 
+	margin: 0;
+	gap: 1rem;
+	list-style:none;
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+}
+
+header:nth-of-type(2) nav:nth-of-type(1) nav ul li{ 
+	display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+header:nth-of-type(2) nav:first-of-type nav ul li a  {
+	margin: 0rem;
+}
+
+header:nth-of-type(2) nav:first-of-type nav ul li a img{
+	margin: 0;
+	width: 1.4rem;
+}
+
+header:nth-of-type(2) nav:nth-of-type(1) button {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: transparent;
+	border: none;
+
+	padding: 0;
+	margin: 0.8rem;
+    width: 1.4rem;
+	height: 1.4rem;
+}
+
+header:nth-of-type(2) nav:first-of-type nav:first-of-type ul:first-of-type li:first-of-type button:first-of-type {
+	margin: 0;
+	justify-content: center;
+}
+
+header:nth-of-type(2) nav:first-of-type nav:first-of-type ul:first-of-type li:first-of-type button:first-of-type span:nth-of-type(1) {
+	transform: rotate(45deg);
+}
+
+header:nth-of-type(2) nav:first-of-type nav:first-of-type ul:first-of-type li:first-of-type button:first-of-type span:nth-of-type(2) {
+	transform: rotate(-45deg);
+}
+
+header:nth-of-type(2) h2 {
+	margin: 0;
+	font-weight: 500;
+}
+
+header:nth-of-type(2) nav:first-of-type button span{
+	width: 100%;
+	height: .15em;
+	background: black;
+	transform-origin: 45% 47%;
 }
 
 header:nth-of-type(2) nav:nth-of-type(2) {
@@ -143,20 +264,12 @@ header:nth-of-type(2) nav:nth-of-type(2) {
 	min-height: 60px;
 }
 
-header:nth-last-of-type(2) nav:nth-of-type(2) span {
+header:nth-last-of-type(2) nav:nth-of-type(2) div {
 	display: flex;
-	/* flex-direction: row;
-    justify-content: center; */
 	align-items: center;
 	text-align: center;
-
-	/* width: calc(100% - 426px); */
 	width: auto;
 	height: 60px;
-	/* overflow: hidden; */
-	/* max-width: 1255px; */
-
-	/* font: inherit; */
 	gap: 1rem;
 
 	/* dit zorgt ervoor dat het in het midden staat van de overige plek op de display flex */
@@ -164,11 +277,6 @@ header:nth-last-of-type(2) nav:nth-of-type(2) span {
 	margin-right: auto;
 }
 
-header:nth-last-of-type(2) nav:nth-of-type(2) span h2 {
-	margin: 0 1rem 0 1rem;
-	font-size: var(--text-size-p);
-	font-weight: 700;
-}
 
 header:nth-last-of-type(2) nav:nth-of-type(2) button {
 	background-color: var(--color-background-light-grey);
@@ -187,13 +295,17 @@ header:nth-last-of-type(2) nav:nth-of-type(2) button img {
 	margin: 0 2rem 0 -2px;
 }
 
-header:nth-of-type(2) nav img:first-of-type {
+header:nth-of-type(2) nav a:first-of-type  {
 	justify-self: flex-start;
 	margin-right: auto;
+}
+
+header:nth-of-type(2) nav a:first-of-type img {
 	width: 3.75rem;
 }
 
-header:nth-of-type(2) nav img {
+
+header:nth-of-type(2) nav a img{ 
 	margin: 0.8rem;
 	width: 1.4rem;
 }
@@ -210,15 +322,17 @@ header:last-of-type {
 
 header:last-of-type p {
 	font-size: var(--text-size-p);
-	text-decoration: none;
 	color: var(--color-text);
-	font-weight: 400;
 }
 
 header:last-of-type a {
 	font-size: var(--text-size-small);
 	text-decoration: underline;
 	color: var(--color-text);
+}
+
+header img:hover {
+	opacity: .5;
 }
 
 /****************/
@@ -232,6 +346,7 @@ header:last-of-type a {
 .PageOne section:first-of-type {
 	position: relative;
 }
+
 
 .PageOne section:first-of-type img {
 	width: 0.8rem;
@@ -253,6 +368,11 @@ header:last-of-type a {
 	position: absolute;
 	bottom: 2rem;
 	left: 2rem;
+	transition: 1s;
+}
+
+.PageOne section:first-of-type button.weg {
+	display: none;
 }
 
 /*************/
@@ -276,7 +396,7 @@ header:last-of-type a {
 	margin-top: 0.8rem;
 }
 
-.PageOne section:nth-of-type(2) button {
+.PageOne section:nth-of-type(2) a {
 	background-color: var(--color-background-dark);
 	color: var(--color-background);
 	padding: 1rem 3rem;
@@ -286,42 +406,58 @@ header:last-of-type a {
 	margin-top: 2rem;
 }
 
-/*************/
-/* Section 3 */
-/************/
+/*****************/
+/* Section 3 & 5 */
+/*****************/
 
-.PageOne section:nth-of-type(3) {
+.PageOne section:nth-of-type(3),
+.PageOne section:nth-of-type(5) {
 	padding-bottom: 1rem;
 }
 
-.PageOne section:nth-of-type(3) span {
+.PageOne section:nth-of-type(3) div,
+.PageOne section:nth-of-type(5) div {
 	display: flex;
 	overflow-x: auto;
 	gap: 1rem;
 	padding-bottom: 2rem;
 }
 
-.PageOne section:nth-of-type(3) article {
+.PageOne section:nth-of-type(3) article,
+.PageOne section:nth-of-type(5) article {
 	margin: 0;
 }
 
-.PageOne section:nth-of-type(3) article img {
+.PageOne section:nth-of-type(3) article img,
+.PageOne section:nth-of-type(5) article img  {
 	width: var(--img-size-medium);
 	height: var(--img-size-medium);
 }
 
-.PageOne section:nth-of-type(3) article p:nth-of-type(1) {
+.PageOne section:nth-of-type(3) article h3,
+.PageOne section:nth-of-type(5) article h3 {
 	margin: 1rem 0 0 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: none;
+	color: var(--color-background-dark);
 }
 
-.PageOne section:nth-of-type(3) article p:nth-of-type(2) {
+.PageOne section:nth-of-type(3) article h4,
+.PageOne section:nth-of-type(5) article h4 {
 	color: var(--color-background-dark-grey);
 	margin: 0.3rem 0 0 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
 }
 
-.PageOne section:nth-of-type(3) article p:nth-of-type(3) {
+.PageOne section:nth-of-type(3) article p,
+.PageOne section:nth-of-type(5) article p {
 	font-size: 14px;
 	margin: 0.3rem 0 0 0;
+	color: var(--color-background-dark);
 }
 
 
@@ -372,7 +508,7 @@ header:last-of-type a {
 	color: var(--color-background);
 }
 
-.PageOne section:nth-of-type(4) ul li button {
+.PageOne section:nth-of-type(4) ul li a {
 	background-color: var(--color-background);
 	color: var(--color-background-dark);
 	padding: 0.6rem 2rem 0.6rem 1.5rem;
@@ -383,46 +519,6 @@ header:last-of-type a {
 	bottom: 1.5rem;
 	left: 1.5rem;
 }
-
-/*************/
-/* Section 5 */
-/************/
-
-.PageOne section:nth-of-type(5) {
-	padding-bottom: 1rem;
-	margin-top: 5rem;
-}
-
-.PageOne section:nth-of-type(5) span {
-	display: flex;
-	overflow-x: auto;
-	gap: 1rem;
-	padding-bottom: 2rem;
-}
-
-.PageOne section:nth-of-type(5) article {
-	margin: 0;
-}
-
-.PageOne section:nth-of-type(5) article img {
-	width: var(--img-size-medium);
-	height: var(--img-size-medium);
-}
-
-.PageOne section:nth-of-type(5) article p:nth-of-type(1) {
-	margin: 1rem 0 0 0;
-}
-
-.PageOne section:nth-of-type(5) article p:nth-of-type(2) {
-	color: var(--color-background-dark-grey);
-	margin: 0.3rem 0 0 0;
-}
-
-.PageOne section:nth-of-type(5) article p:nth-of-type(3) {
-	font-size: 14px;
-	margin: 0.3rem 0 0 0;
-}
-
 
 /*************/
 /* Section 6 */
@@ -442,18 +538,15 @@ header:last-of-type a {
 
 .PageOne section:nth-of-type(6) p {
 	margin-top: 1rem;
+	margin-bottom: 3rem;
 }
 
-.PageOne section:nth-of-type(6) button {
+.PageOne section:nth-of-type(6) a {
 	background-color: var(--color-background-dark);
 	color: var(--color-background);
 	padding: 1rem 1.5rem;
 	border-radius: 25px;
-	border: none;
 	font-weight: 500;
-	bottom: 2rem;
-	left: 2rem;
-	margin-top: 1.5rem;
 }
 
 
@@ -500,7 +593,6 @@ header:last-of-type a {
 
 .PageOne section:nth-of-type(7) ul li img:last-of-type {
 	height: 15%;
-	/* width: 20%; */
 	border-radius: 15px;
 	position: absolute;
 	align-self: center;
@@ -513,7 +605,7 @@ header:last-of-type a {
 	color: var(--color-background);
 }
 
-.PageOne section:nth-of-type(7) ul li button {
+.PageOne section:nth-of-type(7) ul li a {
 	background-color: var(--color-background);
 	color: var(--color-background-dark);
 	padding: 0.6rem;
@@ -544,22 +636,22 @@ header:last-of-type a {
 	font-size: var(--text-size-footer);
 }
 
-.PageTwo section:nth-of-type(1) span:first-of-type {
+.PageTwo section:nth-of-type(1) div:first-of-type {
 	display: flex;
 	justify-content: flex-start;
     align-items: center;
 }
 
-.PageTwo section:nth-of-type(1) span:first-of-type span {
+.PageTwo section:nth-of-type(1) div:first-of-type div {
 	margin-left: auto;
 	display: none;
 }
 
-.PageTwo section:nth-of-type(1) span:first-of-type h2 {
+.PageTwo section:nth-of-type(1) div:first-of-type h2 {
 	font-size: 20px;
 }
 
-.PageTwo section:nth-of-type(1) span:first-of-type span button {
+.PageTwo section:nth-of-type(1) div:first-of-type div button {
 	margin-left: auto;
 	background-color: var(--color-background);
 	color: var(--color-background-dark);
@@ -569,17 +661,22 @@ header:last-of-type a {
 	font-size: 20px;
 }
 
-.PageTwo section:nth-of-type(1) span:first-of-type span button img {
+.PageTwo section:nth-of-type(1) div:first-of-type div button img {
 	width: 24px;
 	margin-left: 1rem;
 }
 
-.PageTwo section:nth-of-type(1) span:last-of-type {
+.PageTwo section:nth-of-type(1) div:last-of-type {
 	display: flex;
 	gap: 2rem;
 	overflow: auto;
 	white-space: nowrap;
 	padding-bottom: .2rem;
+}
+
+.PageTwo section:nth-of-type(1) div:last-of-type a {
+	text-decoration: none;
+	color: var(--color-background-dark);
 }
 
 .PageTwo hr:first-of-type {
@@ -588,6 +685,7 @@ header:last-of-type a {
 	width: 100%;
 	margin: 0;
 	top: 16.4rem;
+	z-index: -1;
 }
 
 .PageTwo section:nth-of-type(2) {
@@ -629,6 +727,7 @@ header:last-of-type a {
 
 .PageTwo section:nth-of-type(3) article {
 	margin: 0;
+	
 }
 
 .PageTwo section:nth-of-type(3) article img {
@@ -636,18 +735,27 @@ header:last-of-type a {
 	height: auto;
 }
 
-.PageTwo section:nth-of-type(3) article p:nth-of-type(1) {
+.PageTwo section:nth-of-type(3) article h3 {
 	margin: 1rem 0 0 1rem;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: none;
+	color: var(--color-background-dark);
 }
 
-.PageTwo section:nth-of-type(3) article p:nth-of-type(2) {
+.PageTwo section:nth-of-type(3) article h4 {
 	color: var(--color-background-dark-grey);
 	margin: .3rem 0 0 1rem;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
 }
 
-.PageTwo section:nth-of-type(3) article p:nth-of-type(3) {
+.PageTwo section:nth-of-type(3) article p {
 	font-size: 14px;
 	margin: .3rem 0 1rem 1rem;
+	color: var(--color-background-dark);
 }
 
 
@@ -664,39 +772,78 @@ footer {
 	font-size: 0;
 }
 
-footer h3 {
+footer section:first-of-type {
+	padding-bottom: 1rem;
+	border-bottom: 1px solid darkgrey;
+	margin-bottom: 2rem;
+}
+
+footer a {
 	color: var(--color-background);
 	margin-bottom: 5px;
 }
 
-footer hr {
+footer h3 {
+	font-size: 14px;
+}
+
+/* Bron: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details#a_simple_disclosure_example */
+
+footer details {
+	font-size: var(--text-size-p);
+	width: 100%;
+	margin-bottom: 3rem;
+}
+  
+footer details > summary {
 	color: var(--color-background);
-	opacity: .3;
-	margin-bottom: 1rem;
-	margin-top: 1.5rem;
+	width: 100%;
+	font-family: "Nike TG", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: var(--text-size-footer);
+	cursor: pointer;
+	list-style: none
 }
 
-footer section:nth-of-type(2) {
+/* bron https://justmarkup.com/articles/2020-09-22-styling-and-animation-details/ */
+
+footer details summary::-webkit-details-marker {
+	display: none; 
+}
+
+footer details summary {
 	display: flex;
-	flex-direction: column;
+	min-width: 4rem;
 	justify-content: space-between;
-	align-items: stretch;
-	margin-bottom: 3rem;
 }
 
-footer section span {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	margin-bottom: 3rem;
+footer details summary::after { 
+	content:"+"; 
+	color: var(--color-background); 
+	margin-left: 5rem;
+	/* right: 0; */
+}
+  
+footer details[open] summary::after { 
+	content:"-"; 
+	color: var(--color-background);
+	margin-left: 5rem;
+	/* right: 0; */
 }
 
-footer section span h3 {
-	margin-top: 0;
+footer details > ul {
+	padding: 0;
 }
 
-footer section span h3:nth-of-type(2) {
-	font-size: 24px;
+footer details > ul li {
+	color: var(--color-background);
+	list-style: none;
+	margin-top: 10px;
+	opacity: 0.5;
+}
+  
+footer details > ul li a {
+	font-size: 12px;
+	color: var(--color-background);
 }
 
 footer section:nth-of-type(3) {
@@ -713,7 +860,12 @@ footer section img {
 	opacity: 0.5;
 }
 
-footer section p {
+footer section:last-of-type {
+	flex-direction: column;
+    display: flex;
+}
+
+footer section:last-of-type a {
 	color: var(--color-background);
 	font-size: var(--text-size-small);
 	opacity: 0.5;
@@ -723,26 +875,6 @@ footer section p {
 /****************/
 /* @MEDIA que */
 /****************/
-
-/* @media (min-width:21.75rem) {
-	section:nth-of-type(3) span  {
-		gap: 1rem;
-	}
-
-	section:nth-of-type(3) span article {
-		width: 60%;
-		gap: 1rem;
-	}
-
-	section:nth-of-type(5) span article {
-		width: 60%;
-		gap: 1rem;
-	}
-
-	:root {
-		--img-size-medium: 100%;
-	}
-} */
 
 @media (min-width:38rem) {
 
@@ -790,8 +922,10 @@ footer section p {
 		min-width: 3rem
 	}
 
-	footer hr {
-		display: none;
+	footer section:first-of-type {
+		padding-bottom: 0rem;
+		border-bottom: 0px solid darkgrey;
+		margin-bottom: 0rem;
 	}
 
 	footer section h3:first-of-type,
@@ -806,12 +940,12 @@ footer section p {
 
 	header:first-of-type,
 	header:nth-of-type(2) nav:nth-of-type(2),
-	.PageTwo section:nth-of-type(1) span:first-of-type span {
+	.PageTwo section:nth-of-type(1) div:first-of-type div {
 		display: flex;
 	}
 
 	header:nth-of-type(2) nav:nth-of-type(1),
-	.PageTwo section:nth-of-type(1) span:nth-of-type(2),
+	.PageTwo section:nth-of-type(1) div:nth-of-type(2),
 	.PageTwo hr:first-of-type,
 	.PageTwo section:nth-of-type(2) {
 		display: none;
@@ -821,7 +955,7 @@ footer section p {
 		grid-template-columns: repeat(3, 1fr);
 	}
 
-	.PageTwo section:nth-of-type(1) span:first-of-type h2 {
+	.PageTwo section:nth-of-type(1) div:first-of-type h2 {
 		font-size: 24px;
 	}
 
@@ -837,5 +971,3 @@ footer section p {
 		margin: 0;
 	}
 }
-
-/* poephoofd */
