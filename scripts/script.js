@@ -1,4 +1,4 @@
-// Video player button
+// Video player button 1
 var buttonWeg = document.querySelector(".PageOne section:first-of-type button");
 var homeVideo = document.querySelector(".PageOne section:first-of-type video");
 
