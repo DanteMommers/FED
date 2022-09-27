@@ -333,7 +333,8 @@ header:last-of-type a {
 	color: var(--color-text);
 }
 
-header img:hover {
+header img:hover,
+header a:hover  {
 	opacity: .5;
 }
 
@@ -638,22 +639,69 @@ header img:hover {
 	font-size: var(--text-size-footer);
 }
 
-.PageTwo section:nth-of-type(1) div:first-of-type {
+.PageTwo section:nth-of-type(1) > div:nth-of-type(1)  {
 	display: flex;
 	justify-content: flex-start;
     align-items: center;
 }
 
-.PageTwo section:nth-of-type(1) div:first-of-type div {
+.PageTwo section:nth-of-type(1) div:nth-of-type(1) > div:nth-of-type(1) {
 	margin-left: auto;
 	display: none;
 }
 
-.PageTwo section:nth-of-type(1) div:first-of-type h2 {
+.PageTwo section:nth-of-type(1) div:nth-of-type(1) h2 {
 	font-size: 20px;
 }
 
-.PageTwo section:nth-of-type(1) div:first-of-type div button {
+.PageTwo section:nth-of-type(1) div:nth-of-type(1) > div:nth-of-type(2) {
+	margin: 0;
+	padding: 2.5rem 1.3rem ;
+	position: fixed;
+	right:0;
+	left: 0;
+	top:0;
+	bottom:0;
+	background-color: var(--color-background);
+	/* transform:translateY(107%); */
+	transition:transform .3s;
+	animation-timing-function: ease;
+}
+
+.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(2) div:nth-of-type(1) {
+	margin: 1rem 0;
+}
+
+.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(2) h1,
+.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(2) h4,
+label {
+	font-size: var(--text-size-p);
+	font-weight: 400;
+	text-transform: none;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: 0;
+}
+
+.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(2) label {
+	display: flex;
+	margin-bottom: 8px;
+	gap: 5px;
+}
+
+.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(2) button{
+	margin: 0;
+	position: fixed;
+	background-color: var(--color-background);
+	border: none;
+	right: 1rem;
+    top: 1rem;
+}
+
+.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(2) button img {
+	width: 32px;
+}
+
+.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(1) button {
 	margin-left: auto;
 	background-color: var(--color-background);
 	color: var(--color-background-dark);
@@ -663,12 +711,12 @@ header img:hover {
 	font-size: 20px;
 }
 
-.PageTwo section:nth-of-type(1) div:first-of-type div button img {
+.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(1) button > img {
 	width: 24px;
 	margin-left: 1rem;
 }
 
-.PageTwo section:nth-of-type(1) div:last-of-type {
+.PageTwo section:nth-of-type(1) > div:nth-of-type(2){
 	display: flex;
 	gap: 2rem;
 	overflow: auto;
@@ -676,7 +724,7 @@ header img:hover {
 	padding-bottom: .2rem;
 }
 
-.PageTwo section:nth-of-type(1) div:last-of-type a {
+.PageTwo section:nth-of-type(1) div:nth-of-type(2) a {
 	text-decoration: none;
 	color: var(--color-background-dark);
 }

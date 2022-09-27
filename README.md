@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Rood
 
   #### Je focus:
-  surface plane (Bling Bling)
+  responsive
  
 </details>
 
@@ -59,27 +59,23 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen:
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Met de screenreader ging opzich goed. Alle belangrijke dingen kunngen gedaan worden. alleen is het wel heel lastig om te gebruiken. de website had op sommige plekken wel betere heading kunnen hebben. dus dat zou ik kunnne verbeteren
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Met de muis ging het natuurlijk perfect alleen met de toetsenboard niet helemaal.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  ALs je ging tappen blijf je vast zitten in de search. je moet dan op het kruisje klikken voordat je eruit komt. niet onlogisch maar je kan dus niet in 1 keer helemaal naar beneden tappen. je moet wel opletten.
+    <img src="readme-images/screenshot-1.png" width="375px" alt="de search">
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  We gingen met elestiekjes en een shock apparaat (een emulatie van parkisons decease) kijken of de website nog goed te gebruiken was. met de elestiekjes lukte het, zeker op de computer. maar telefoon werdt al wat lastiger. je moest je telefoon erg ongemakkelijk vasthouden maar dat was het ook.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Bij het shock apparaat werdt het heel lastig. de laptop was bijna niet te gebruiken en de telefoon al helemaal niet. alleen vind ik het wel lastig om een oplossing daarvoor te bedenken of iets waar dat heel erg mee zal helpen.
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+We gingen met verschillende brilletjes om verschillende visuele beperkingen te bekijken. met de meest brllen viel het mee, maar erg irritant dat zeker. en bij sommige waren bepaalde dingen niet te lezen of te doen. dat was wel erg lastig. het beste wat we kunnen doen voor die mensen volgensmij is het contrast hoog maken. bepaalde kleuren gebruiken / opties maken zodat mensen kunnen kiezen tussen kleuren zodat ze kunnen kiezen wat ze het beste kunnen zien.
 
 </details>
 
@@ -147,26 +143,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Deze week heb ik vooral gewerkt aan het optimalizeren en verbeteren van mijn code. onnodige code weghalen. daarnaast was ik ook bezig met het maken van de hamburger menu en het verbeteren/mooier maken ervan.
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
+  samen met je groepje opstellen - Andere mensen uit mijn groepje waren er niet.
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  student 1
+  naar mijn code kijken en kijken wat er nog verbetert kan worden
+  En waar ik in het vervolg het beste aan kan werken. waar moeten mijn prioritijten liggen.
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Code was prima. er was niet echt heel erg optimalizeren voor de wat ik eruit zou halen. de moeite zou het niet waard zijn
+  - volgende aandachts punten waren: 1: A om de articles en H3, h4 toepassen. 2: Scroll toevoegen op de 3e header (link naar stuntenkorting), 3: filter toevoegen op de schoenen pagina. 4: search toevoegen. 5: filter werkend maken. 6: search werkend maken.
 
 </details>
 
