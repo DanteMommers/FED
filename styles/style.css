@@ -55,6 +55,7 @@ body {
 	color: var(--color-text);
 	background-color: var(--color-background);
 	margin: 0;
+	transition:transform .3s;
 }
 
 body.toonFilter {
@@ -68,12 +69,39 @@ body.toonFilter .PageTwo section:nth-of-type(1) div:nth-of-type(1) > div:nth-of-
 	transition-delay: .1s;
 }
 
+Body.toonFilter2 .PageTwo section:nth-of-type(3) > div {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	gap: 1rem;
+	position: relative;
+}
+
+Body.toonFilter2 .PageTwo section:nth-of-type(3) > div:nth-of-type(1) div:nth-of-type(1) {
+	background-color: var(--color-background);
+	transition:transform .3s;
+	transform:translatex(0%);
+	animation-timing-function: ease;
+	overflow: auto;
+	position: sticky;
+    top: 2rem;
+    height: 92vh;
+	visibility: visible;
+}
+
+Body.toonFilter2 .PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(1) > button:first-of-type::before  {
+	content: "Verberg\00a0" ;
+}
+
 body.toonMenu {
 	overflow: hidden;
 }
 
 body.toonMenu .PageOne section:first-of-type {
 	z-index: -1;
+}
+
+body.toonMenu .PageTwo section:nth-of-type(1) > div:nth-of-type(2) {
+	overflow: hidden;
 }
 
 body.toonMenu header:nth-of-type(2) > nav:nth-of-type(1) nav {
@@ -785,6 +813,12 @@ label {
 	margin: 0 0 0 2rem;
 }
 
+/* bron https://stackoverflow.com/questions/5467605/add-a-space-after-an-element-using-after */
+
+.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(1) > button:first-of-type::before {
+	content: "Toon\00a0" ;
+}
+
 .PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(1) button > img {
 	width: 24px;
 	margin-left: 1rem;
@@ -841,11 +875,11 @@ label {
 	margin-left: 1rem;
 }
 
-/* .PageTwo section:nth-of-type(3) div.toonFilter3 {
+.PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) > div:nth-of-type(2) {
+	display: flex;
+}
 
-} */
-
-.PageTwo section:nth-of-type(3) div:nth-of-type(2) {
+.PageTwo section:nth-of-type(3) div:nth-of-type(1) > div:nth-of-type(2) {
 	width: 100%;
 	display: grid;
 	flex-direction: column;
@@ -855,7 +889,6 @@ label {
 
 .PageTwo section:nth-of-type(3) div:nth-of-type(2) article {
 	margin: 0;
-	
 }
 
 .PageTwo section:nth-of-type(3) div:nth-of-type(2) article img {
@@ -886,71 +919,75 @@ label {
 	color: var(--color-background-dark);
 }
 
-/* .PageTwo section:nth-of-type(1) div:nth-of-type(1) > div:nth-of-type(2) {
-	margin: 0;
-	padding: 2.5rem 1.3rem 0 1.3rem;
-	position: fixed;
-	right:0;
-	left: 0;
-	top:0;
-	bottom:0;
-	background-color: var(--color-background);
-	transform:translateY(101%);
+.PageTwo section:nth-of-type(3) > div:nth-of-type(1) div:nth-of-type(1) {
+	visibility: hidden;
+	position: absolute;
+	transform:translatex(-107%);
 	transition:transform .3s;
-	animation-timing-function: ease;
-	overflow: auto;
 }
 
-.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(2) div:nth-of-type(1) {
-	padding: 1.8rem 0;
+.PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) section:nth-of-type(1) {
+	padding: 0 0 1.8rem 0;
 }
 
-.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(2) div:nth-of-type(2),
-.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(2) div:nth-of-type(3),
-.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(2) div:nth-of-type(4),
-.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(2) div:nth-of-type(5)  {
-	padding: 1.8rem 0;
+.PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) section:nth-of-type(1) h4:nth-of-type(1) {
+	margin-top: 0;
+}
+
+.PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) section:nth-of-type(2),
+.PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) section:nth-of-type(3),
+.PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) section:nth-of-type(4),
+.PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) section:nth-of-type(5)  {
+	padding: 0 0 1rem 0;
 	border-top: 1px solid lightgray;
 }
 
-.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(2) div:nth-of-type(6) {
-	position: sticky;
-	justify-content: center;
+.PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) section:nth-of-type(4) ul {
+	display: grid;
+    row-gap: 1rem;
+	flex-direction: column;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+	padding: 0;
+}
+
+.PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) section:nth-of-type(4) ul li {
+	list-style: none;
 	display: flex;
-	bottom: 0;
-	left: 0;
-	right: 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) section:nth-of-type(4) ul li img{
+	width: 24px;
+}
+
+.PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) label {
+	display: flex;
+	margin-bottom: 8px;
+	gap: 5px;
+}
+
+.PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) section:nth-of-type(6) {
 	background-color: var(--color-background);
 	border-top: 1px solid lightgray;
 }
 
-.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(2) div:nth-of-type(6) > button:nth-of-type(1) {
+.PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) section:nth-of-type(6) > button:nth-of-type(1) {
 	background-color: var(--color-background);
 	color: var(--color-background-dark);
-	padding: 1rem 18%;
-	border-radius: 25px;
-	border: 1px solid lightgray;
-	margin: 1rem 1% 1rem 2%;
-	transition: 1s;
 }
 
-.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(2) div:nth-of-type(6) > button:nth-of-type(2) {
+.PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) section:nth-of-type(6) > button:nth-of-type(2) {
 	background-color: var(--color-background-dark);
 	color: var(--color-background);
-	padding: 1rem 16%;
-	border-radius: 25px;
-	border: none;
-	margin: 1rem 2% 1rem 1% ;
-	transition: 1s;
-} */
+}
 
 /*************/
 /* Footer */
 /************/
 
 footer {
-	/* display: flex;
-	flex-direction: column; */
 	width: auto;
 	background-color: var(--color-background-dark);
 	padding: 6%;
@@ -1136,8 +1173,11 @@ footer section:last-of-type a {
 	.PageTwo section:nth-of-type(2) {
 		display: none;
 	}
+	.PageTwo section:nth-of-type(1) > div:nth-of-type(1) {
+		margin-bottom: 6px;
+	}
 
-	.PageTwo section:nth-of-type(3) div:nth-of-type(2) {
+	.PageTwo section:nth-of-type(3) div:nth-of-type(1) > div:nth-of-type(2) {
 		grid-template-columns: repeat(3, 1fr);
 	}
 

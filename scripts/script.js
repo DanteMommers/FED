@@ -10,6 +10,9 @@ var filterButton = document.querySelector(".PageTwo section:nth-of-type(2) butto
 var filterWeg = document.querySelector(".PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(2) > button");
 var filterKlaar = document.querySelector(".PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(2) div:nth-of-type(6) > button:nth-of-type(2)");
 
+// Filter 2
+var filterButton2 = document.querySelector(".PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(1) > button"); 
+
 // Het hamburger menu
 var deNav = document.querySelector("header:nth-of-type(2) nav");
 var hamburgerMenu = document.querySelector("header:nth-of-type(2) nav button");
@@ -38,6 +41,10 @@ function sluitFilter() {
     deBody.classList.remove("toonFilter")
 }
 
+function Filter2() {
+    deBody.classList.toggle("toonFilter2")
+}
+
 if (filterButton) {
     filterButton.addEventListener("click", openFilter)
 }
@@ -48,6 +55,10 @@ if (filterWeg) {
 
 if (filterKlaar) {
     filterKlaar.addEventListener("click", sluitFilter)
+}
+
+if (filterButton2) {
+    filterButton2.addEventListener("click", Filter2)
 }
 
 if (buttonWeg) {
