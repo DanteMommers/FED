@@ -172,31 +172,28 @@ We gingen met verschillende brilletjes om verschillende visuele beperkingen te b
   <summary>uitwerken na test in 8e werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  Het lastige voor mij was is dat ik niet heel goed op de accessibility aan het letten was. Ik was heel erg gefocust op het precies namaken van de website. Dus voor mij waren er helaas niet veel nieuwe bevindingen. het waren de zelfde soort problemen als de orginele website. 
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  De screenreader had moeite met de website en ik ook zeker met de screenreader. Het ging eerst vrij goed alleen op klein scherm heeft hij wat moeite met de    hamburgermenu. Wat ook lastig was ik had niet de juiste headings op bepaalde plekken gezet. en omdat je niet lekker door de website kan tappen werkt ook niet lekker mee.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Wat ik vooral kan verbeteren zijn de headings. De tap functionaliteit waar ik de screenreader ook erg van zou profiteren. (met indien nodig afbeeldingen)
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Het ging reddelijk goed tot dat ik met de hamburger menu zat. daar tap je doorheen ook al zie je hem niet. dus dat is iets wat ik moet oplossen. Ook was dit het geval op de tweede pagina. Maar een stuk meer. Ik heb een filter waar je doorheen tapt zonder te zien. Dit gebeurde ook met de scrollbare categorieën. allemaal verbeterpuntejes. (met indien nodig afbeeldingen)
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+ Het gene wat opgelost kan worden is het tappen door de gesloten hamburger menu, scrollbare categorieën en filters. 
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Net zoals hiervoor was dit weer lekker lastig. telefoon was niet te gebruiken. en de laptop al helemaal niet. het geeft je zeker persepectief over hoe slecht sommige mensen het kunnne hebben.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Er moet iets heel nieuws voor die mensen komen want ik niet hoe ik mijn website kan verbeter op zo'n manier zonder de hele website te veranderen voor die mensen.
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+Hier geld precies het zelfde als de vorige keer. je ziet echt heel erg slecht door sommige brillen. het beste wat ik kan doen is het contrast hoog houden. want best goed is gedaan omdat dat bijna alles zwart op wit is of andersom.
 </details>
 
 
@@ -209,27 +206,29 @@ We gingen met verschillende brilletjes om verschillende visuele beperkingen te b
   <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+Ik heb niet heel hard kunnen werken deze week maar heb toch een paar hele leuke dingen gedaan. vooral heb ik de filter toegevoegd. voor klein en groot scherm.
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+Zelf opstellen.
+  
+  Ik mijn grootste vraag was is is hoe ik mijn hamburger menu te verbeteren. daarnaast hoe ik transistion kon laten werken. op de schoentjes. wat mij nog niet was gelukt.
+  
+  Ik had ook een vraag omdat ik een probleempje had met een weghalen van een marker. die op de andere plek van mijn website wel weg ging maar daar niet. vond ik raar dus wou het even navragen.
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
-
+  - States toevoegen
+  - Voor de hamburger menu moet ik display: none of :focus-within gebruiken. na het bekijken van mijn wbsite hebben ik en vasilles besloten dat disnlay:none de beter optie was.
+  - Radiobuttons en checkboxes namen geven. voor wat extra functionaliteit en detail.
+  - in mijn css had ik op regel 982 een visabilitie:hidden staan die niet nodig was, en zelf een stukje transitie weghaalde
+  - op regel 76 kon ik beter display: grid neerzetten en grid-collumn-template (0fr, 3fr) toevoegen.
+  - De schoenen animatie geven maar dit moest ik als laatste doen als ik tijd over had
+  - Mijn logo in een h1 zetten
+  - Bij section 3 & 5 de middeste tekst terug omzetten naar een P inplaatvan de h4 die mij vertelt was te doen in de vorige feedback sessie.
+  - de H1 op mijn website omzetten naar een h2 want dat gaf betere semantiese waarde.
+  
 </details>
 
 
@@ -242,19 +241,30 @@ We gingen met verschillende brilletjes om verschillende visuele beperkingen te b
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/Eindwebsite1.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/Eindwebsite2.png" width="375px" alt="uitomst opdracht 2">
+  <img src="readme-images/Eindwebsite3.png" width="375px" alt="uitomst opdracht 3">
+  <img src="readme-images/Eindwebsite4.png" width="375px" alt="uitomst opdracht 4">
+  <img src="readme-images/Eindwebsite5.png" width="375px" alt="uitomst opdracht 5">
+  <img src="readme-images/Eindwebsite6.png" width="375px" alt="uitomst opdracht 6">
+  <img src="readme-images/Eindwebsite7.png" width="375px" alt="uitomst opdracht 7">
+  <img src="readme-images/Eindwebsite8.png" width="375px" alt="uitomst opdracht 8">
+
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb echt heel veel dingen geleerd. alles van de flex froggy, grid garden, media queue, css selectoren, javascript is weer wat opgefrissed, position relative, sticky & absolute, Hamburger menu, animatie, CUSTOM PROPERTIES met variable, semantisch html en nog een heleboel.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/verbeteren.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  De accessibility verbeteren, ik heb het echt geprobeerd en zeker met het tappen maar er leek geen goede oplossing te zijn/ik kon die niet vinden in de tijd die ik nog overhad. 
+  
+  Een klein beetje responsiveness. als je van 60 em naar lagen dan 60 em met de filter open gaat die niet weg tot dat je hem weer groter maakt zodat je de filter kan sluiten. gelt ook de andere kant op met de filter. 
+  <img src="readme-images/verbeteren2.png" width="375px" alt="bummer">
+  <img src="readme-images/verbeteren3.png" width="375px" alt="bummer">
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
 
@@ -268,8 +278,9 @@ We gingen met verschillende brilletjes om verschillende visuele beperkingen te b
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. bron 1: https://stackoverflow.com/questions/5467605/add-a-space-after-an-element-using-after
+  2. bron 2: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details#a_simple_disclosure_example 
+  3. bron 3: https://justmarkup.com/articles/2020-09-22-styling-and-animation-details/
+  4. bron 4: Studentenassistenten (toppers)
 
 </details>
