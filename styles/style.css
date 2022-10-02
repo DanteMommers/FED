@@ -4,8 +4,7 @@
 /* CSS REMEDY */
 /**************/
 
-*
-*::after,
+* *::after,
 *::before {
 	box-sizing: border-box;
 }
@@ -42,8 +41,8 @@ summary {
 /****************/
 
 details summary::-webkit-details-marker {
-	display:none;
-  }
+	display: none;
+}
 
 @font-face {
 	src: url("../font/Futura_Condensed_Extra_Bold.otf");
@@ -59,42 +58,42 @@ body {
 	color: var(--color-text);
 	background-color: var(--color-background);
 	margin: 0;
-	transition:transform .3s;
+	transition: transform .3s;
 }
 
 body.toonFilter {
 	overflow: hidden;
 }
 
-body.toonFilter .PageTwo section:nth-of-type(1) div:nth-of-type(1) > div:nth-of-type(2) {
-	transform:translateY(0%);
-	transition:transform .3s;
+body.toonFilter .PageTwo section:nth-of-type(1) div:nth-of-type(1)>div:nth-of-type(2) {
+	transform: translateY(0%);
+	transition: transform .3s;
 	animation-timing-function: ease-in;
 	transition-delay: .1s;
 }
 
-Body.toonFilter2 .PageTwo section:nth-of-type(3) > div {
+Body.toonFilter2 .PageTwo section:nth-of-type(3)>div {
 	display: grid;
 	grid-template-columns: 1fr 3fr;
 	gap: 1rem;
 	position: relative;
-	transition:transform .3s;
+	transition: transform .3s;
 }
 
-Body.toonFilter2 .PageTwo section:nth-of-type(3) > div:nth-of-type(1) div:nth-of-type(1) {
+Body.toonFilter2 .PageTwo section:nth-of-type(3)>div:nth-of-type(1) div:nth-of-type(1) {
 	background-color: var(--color-background);
-	transition:transform .3s;
-	transform:translatex(0%);
+	transition: transform .3s;
+	transform: translatex(0%);
 	animation-timing-function: ease;
 	overflow: auto;
 	position: sticky;
-    top: 2rem;
-    height: 92vh;
+	top: 2rem;
+	height: 92vh;
 	visibility: visible;
 }
 
-Body.toonFilter2 .PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(1) > button:first-of-type::before  {
-	content: "Verberg\00a0" ;
+Body.toonFilter2 .PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(1)>button:first-of-type::before {
+	content: "Verberg\00a0";
 }
 
 body.toonMenu {
@@ -105,29 +104,30 @@ body.toonMenu .PageOne section:first-of-type {
 	z-index: -1;
 }
 
-body.toonMenu .PageTwo section:nth-of-type(1) > div:nth-of-type(2) {
+body.toonMenu .PageTwo section:nth-of-type(1)>div:nth-of-type(2) {
 	overflow: hidden;
 }
 
-body.toonMenu header:nth-of-type(2) > nav:nth-of-type(1) nav {
-	transform:translatex(0);
-	transition:transform .3s;
-	animation-timing-function: ease-in;
-	transition-delay: .1s;
+body.toonMenu header:nth-of-type(2)>nav:nth-of-type(1) nav
+
+/* body header:nth-of-type(2) > nav:nth-of-type(1) nav:focus-within */
+	{
+	transform: translatex(0);
+	transition: transform .3s ease-in;
 }
 
-body.toonMenu  header:nth-of-type(2) > nav:nth-of-type(1)::before {
+body.toonMenu header:nth-of-type(2)>nav:nth-of-type(1)::before {
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
-h1 {
+/* h1 {
 	font-family: Futura Bold, "Helvetica Neue";
 	font-size: var(--text-size-h1);
 	text-transform: uppercase;
 	color: var(--color-text);
 	letter-spacing: -2px;
 	margin: 0;
-}
+} */
 
 h2 {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -156,15 +156,15 @@ a {
 	text-decoration: none;
 }
 
-.PageOne /*  Main Margin eerste pagina */ {
+.PageOne
+
+/*  Main Margin eerste pagina */
+	{
 	margin: 6%;
 	position: relative;
 }
 
-header img:hover,
-header a:hover  {
-	opacity: .5;
-}
+
 
 
 /****************/
@@ -215,12 +215,13 @@ header:first-of-type nav a:last-of-type {
 header:nth-of-type(2) nav:nth-of-type(1) {
 	display: flex;
 	justify-content: flex-end;
+	align-items: center;
 	margin: 5px 6%;
 	transition: all .3s;
 	background-color: rgba(0, 0, 0, 0);
 }
 
-header:nth-of-type(2) > nav:nth-of-type(1)::before {
+header:nth-of-type(2)>nav:nth-of-type(1)::before {
 	content: "";
 	position: absolute;
 	display: block;
@@ -237,51 +238,51 @@ header:nth-of-type(2) nav:nth-of-type(1) nav {
 	z-index: 2;
 	margin: 0;
 	padding: 1rem 8% 0 7rem;
+	align-items: flex-start;
 	position: fixed;
-	right:0;
-	top:0;
-	bottom:0;
+	right: 0;
+	top: 0;
+	bottom: 0;
 	background-color: var(--color-background);
-	transform:translatex(107%);
-	transition:transform .3s;
+	transform: translatex(107%);
+	transition: transform .3s;
 	animation-timing-function: ease;
 }
 
-header:nth-of-type(2) nav:nth-of-type(1) nav ul { 
+header:nth-of-type(2) nav:nth-of-type(1) nav ul {
 	margin: 0;
 	gap: 1rem;
-	list-style:none;
+	list-style: none;
 	display: flex;
 	flex-direction: column;
 	text-align: right;
 }
 
-header:nth-of-type(2) nav:nth-of-type(1) nav ul li{ 
+header:nth-of-type(2) nav:nth-of-type(1) nav ul li {
 	display: flex;
-    list-style: none;
-    justify-content: flex-end;
+	list-style: none;
+	justify-content: flex-end;
 }
 
-header:nth-of-type(2) nav:first-of-type nav ul li a  {
+header:nth-of-type(2) nav:first-of-type nav ul li a {
 	margin: 0rem;
 }
 
-header:nth-of-type(2) nav:first-of-type nav ul li a img{
+header:nth-of-type(2) nav:first-of-type nav ul li a img {
 	margin: 0;
 	width: 1.4rem;
 }
 
 header:nth-of-type(2) nav:nth-of-type(1) button {
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	background: transparent;
-	border: none;
+    flex-direction: column;
+    justify-content: space-between;
+    background: transparent;
+    border: none;
 
-	padding: 0;
-	margin: 0.8rem;
-    width: 1.4rem;
-	height: 1.4rem;
+    padding: 14px;
+    width: 52px;
+    height: 52px;
 }
 
 header:nth-of-type(2) nav:first-of-type nav:first-of-type ul:first-of-type li:first-of-type button:first-of-type {
@@ -302,7 +303,7 @@ header:nth-of-type(2) h2 {
 	font-weight: 500;
 }
 
-header:nth-of-type(2) nav:first-of-type button span{
+header:nth-of-type(2) nav:first-of-type button span {
 	width: 100%;
 	height: .15em;
 	background: black;
@@ -348,17 +349,19 @@ header:nth-last-of-type(2) nav:nth-of-type(2) button img {
 	margin: 0 2rem 0 -2px;
 }
 
-header:nth-of-type(2) nav a:first-of-type  {
+header:nth-of-type(2) nav a:first-of-type {
 	justify-self: flex-start;
 	margin-right: auto;
 }
 
 header:nth-of-type(2) nav a:first-of-type img {
 	width: 3.75rem;
+	height: 24px;
+    margin: 0;
 }
 
 
-header:nth-of-type(2) nav a img{ 
+header:nth-of-type(2) nav a img {
 	margin: 0.8rem;
 	width: 1.4rem;
 }
@@ -383,6 +386,55 @@ header:last-of-type a {
 	text-decoration: underline;
 	color: var(--color-text);
 }
+
+/********************************/
+/* Hover, Active & Focus States */
+/********************************/
+
+header:nth-last-of-type(2) nav:nth-of-type(2) button:hover,
+header:nth-last-of-type(2) nav:nth-of-type(2) button:focus {
+	background-color: rgb(224, 224, 224);
+	outline: none;
+}
+
+header:nth-last-of-type(2) nav:nth-of-type(1) > a:nth-of-type(2):hover,
+header:nth-last-of-type(2) nav:nth-of-type(1) > a:nth-of-type(3):hover,
+header:nth-last-of-type(2) nav:nth-of-type(2) > a:nth-of-type(2):hover,
+header:nth-last-of-type(2) nav:nth-of-type(2) > a:nth-of-type(3):hover,
+header:nth-last-of-type(2) nav:nth-of-type(1) button:hover,
+
+header:nth-last-of-type(2) nav:nth-of-type(1) > a:nth-of-type(2):focus,
+header:nth-last-of-type(2) nav:nth-of-type(1) > a:nth-of-type(3):focus,
+header:nth-last-of-type(2) nav:nth-of-type(2) > a:nth-of-type(2):focus,
+header:nth-last-of-type(2) nav:nth-of-type(2) > a:nth-of-type(3):focus,
+header:nth-last-of-type(2) nav:nth-of-type(1) button:focus  {
+	background-color: rgb(224, 224, 224);
+	border-radius: 100%;
+	outline: none;
+}
+
+header:nth-last-of-type(2) nav:nth-of-type(1) > a:nth-of-type(2):active,
+header:nth-last-of-type(2) nav:nth-of-type(1) > a:nth-of-type(3):active,
+header:nth-last-of-type(2) nav:nth-of-type(2) > a:nth-of-type(2):active,
+header:nth-last-of-type(2) nav:nth-of-type(2) > a:nth-of-type(3):active,
+header:nth-last-of-type(2) nav:nth-of-type(1) button:active  {
+	background-color: rgb(145, 145, 145);
+	border-radius: 100%;
+	outline: none;
+}
+
+header:first-of-type div a:hover,
+header:nth-of-type(2) nav a:first-of-type:hover {
+	opacity: .5;
+}
+
+
+.PageOne section:nth-of-type(2) a:hover,
+.PageOne section:nth-of-type(4) ul li a:hover,
+.PageOne section:nth-of-type(7) ul li a:hover {
+	opacity: .5;
+}
+
 
 /****************/
 /* Page One */
@@ -436,6 +488,15 @@ header:last-of-type a {
 	text-align: center;
 }
 
+.PageOne section:nth-of-type(2) h2 {
+	font-family: Futura Bold, "Helvetica Neue";
+	font-size: var(--text-size-h1);
+	text-transform: uppercase;
+	color: var(--color-text);
+	letter-spacing: -2px;
+	margin: 0;
+}
+
 .PageOne section:nth-of-type(2) p:first-child {
 	margin-bottom: 0.1rem;
 
@@ -478,7 +539,7 @@ header:last-of-type a {
 }
 
 .PageOne section:nth-of-type(3) article img,
-.PageOne section:nth-of-type(5) article img  {
+.PageOne section:nth-of-type(5) article img {
 	width: var(--img-size-medium);
 	height: var(--img-size-medium);
 }
@@ -493,8 +554,8 @@ header:last-of-type a {
 	color: var(--color-background-dark);
 }
 
-.PageOne section:nth-of-type(3) article h4,
-.PageOne section:nth-of-type(5) article h4 {
+.PageOne section:nth-of-type(3) article p:nth-of-type(1),
+.PageOne section:nth-of-type(5) article p:nth-of-type(1) {
 	color: var(--color-background-dark-grey);
 	margin: 0.3rem 0 0 0;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -502,8 +563,8 @@ header:last-of-type a {
 	font-weight: 400;
 }
 
-.PageOne section:nth-of-type(3) article p,
-.PageOne section:nth-of-type(5) article p {
+.PageOne section:nth-of-type(3) article p:nth-of-type(2),
+.PageOne section:nth-of-type(5) article p:nth-of-type(2) {
 	font-size: 14px;
 	margin: 0.3rem 0 0 0;
 	color: var(--color-background-dark);
@@ -574,6 +635,15 @@ header:last-of-type a {
 
 .PageOne section:nth-of-type(6) {
 	margin-top: 5rem;
+}
+
+.PageOne section:nth-of-type(6) h2:nth-of-type(2) {
+font-family: Futura Bold, "Helvetica Neue";
+    font-size: var(--text-size-h1);
+    text-transform: uppercase;
+    color: var(--color-text);
+    letter-spacing: -2px;
+    margin: 0;
 }
 
 .PageOne section:nth-of-type(6) img {
@@ -684,13 +754,13 @@ header:last-of-type a {
 	font-size: var(--text-size-footer);
 }
 
-.PageTwo section:nth-of-type(1) > div:nth-of-type(1)  {
+.PageTwo section:nth-of-type(1)>div:nth-of-type(1) {
 	display: flex;
 	justify-content: flex-start;
-    align-items: center;
+	align-items: center;
 }
 
-.PageTwo section:nth-of-type(1) div:nth-of-type(1) > div:nth-of-type(1) {
+.PageTwo section:nth-of-type(1) div:nth-of-type(1)>div:nth-of-type(1) {
 	margin-left: auto;
 	display: none;
 }
@@ -699,16 +769,16 @@ header:last-of-type a {
 	font-size: 20px;
 }
 
-.PageTwo section:nth-of-type(1) div:nth-of-type(1) > div:nth-of-type(2) {
+.PageTwo section:nth-of-type(1) div:nth-of-type(1)>div:nth-of-type(2) {
 	margin: 0;
 	padding: 2.5rem 1.3rem 0 1.3rem;
 	position: fixed;
-	right:0;
+	right: 0;
 	left: 0;
-	top:0;
-	bottom:0;
+	top: 0;
+	bottom: 0;
 	background-color: var(--color-background);
-	transform:translateY(101%);
+	transform: translateY(101%);
 	transition: all .3s;
 	animation-timing-function: ease;
 	overflow: auto;
@@ -736,7 +806,7 @@ header:last-of-type a {
 	padding: 0;
 }
 
-.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(2) div:nth-of-type(6) > button:nth-of-type(1) {
+.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(2) div:nth-of-type(6)>button:nth-of-type(1) {
 	background-color: var(--color-background);
 	color: var(--color-background-dark);
 	padding: 1rem 18%;
@@ -746,19 +816,19 @@ header:last-of-type a {
 	transition: 1s;
 }
 
-.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(2) div:nth-of-type(6) > button:nth-of-type(2) {
+.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(2) div:nth-of-type(6)>button:nth-of-type(2) {
 	background-color: var(--color-background-dark);
 	color: var(--color-background);
 	padding: 1rem 16%;
 	border-radius: 25px;
 	border: none;
-	margin: 1rem 2% 1rem 1% ;
+	margin: 1rem 2% 1rem 1%;
 	transition: 1s;
 }
 
 .PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(2) div:nth-of-type(4) ul {
 	display: grid;
-    row-gap: 1rem;
+	row-gap: 1rem;
 	flex-direction: column;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 1rem;
@@ -768,8 +838,8 @@ header:last-of-type a {
 .PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(2) div:nth-of-type(4) ul li {
 	list-style: none;
 	display: flex;
-    flex-direction: column;
-    align-items: center;
+	flex-direction: column;
+	align-items: center;
 }
 
 .PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(2) div:nth-of-type(4) ul li img {
@@ -793,20 +863,20 @@ label {
 	gap: 5px;
 }
 
-.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(2) > button{
+.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(2)>button {
 	margin: 0;
 	position: fixed;
 	background-color: var(--color-background);
 	border: none;
 	right: 1rem;
-    top: 1rem;
+	top: 1rem;
 }
 
 .PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(2) button img {
 	width: 32px;
 }
 
-.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(1) > button {
+.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(1)>button {
 	margin-left: auto;
 	background-color: var(--color-background);
 	color: var(--color-background-dark);
@@ -819,38 +889,38 @@ label {
 
 /* bron https://stackoverflow.com/questions/5467605/add-a-space-after-an-element-using-after */
 
-.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(1) > button:first-of-type::before {
-	content: "Toon\00a0" ;
+.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(1)>button:first-of-type::before {
+	content: "Toon\00a0";
 }
 
 .PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(1) details {
 	margin-left: 1rem;
 }
 
-.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(1) button > img {
+.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(1) button>img {
 	width: 24px;
 	margin-left: 1rem;
 }
 
 .PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(1) details summary {
-	font-size: 20px;	
+	font-size: 20px;
 }
 
 .PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(1) details summary::after {
-	content: "⋁"; 
+	content: "⋁";
 	color: var(--color-background-dark);
-	margin-left: 1rem;	
+	margin-left: 1rem;
 }
 
 .PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(1) details[open] summary::after {
-	content: "⋀"; 
+	content: "⋀";
 	color: var(--color-background-dark);
-	margin-left: 1rem;	
+	margin-left: 1rem;
 }
 
 .PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(1) details summary::-webkit-details-marker,
-.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(1) details summary::marker   {
-	display: none; 
+.PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(1) details summary::marker {
+	display: none;
 	color: var(--color-background);
 }
 
@@ -864,12 +934,12 @@ label {
 	border-radius: 0 0 0 30px;
 	padding: 0 1rem 1rem 1rem;
 	right: 0;
-    width: 9rem;
+	width: 9rem;
 }
 
 .PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(1) details ul li {
 	margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+	margin-bottom: 0.5rem;
 }
 
 .PageTwo section:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(1) details ul li a {
@@ -881,7 +951,7 @@ label {
 	margin-left: 10px;
 }
 
-.PageTwo section:nth-of-type(1) > div:nth-of-type(2){
+.PageTwo section:nth-of-type(1)>div:nth-of-type(2) {
 	display: flex;
 	gap: 2rem;
 	overflow: auto;
@@ -932,11 +1002,16 @@ label {
 	margin-left: 1rem;
 }
 
-.PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) > div:nth-of-type(2) {
+.PageTwo section:nth-of-type(3)>div {
+	display: grid;
+	grid-template-columns: 3fr;
+}
+
+.PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1)>div:nth-of-type(2) {
 	display: flex;
 }
 
-.PageTwo section:nth-of-type(3) div:nth-of-type(1) > div:nth-of-type(2) {
+.PageTwo section:nth-of-type(3) div:nth-of-type(1)>div:nth-of-type(2) {
 	width: 100%;
 	display: grid;
 	flex-direction: column;
@@ -976,11 +1051,10 @@ label {
 	color: var(--color-background-dark);
 }
 
-.PageTwo section:nth-of-type(3) > div:nth-of-type(1) div:nth-of-type(1) {
-	visibility: hidden;
+.PageTwo section:nth-of-type(3)>div:nth-of-type(1) div:nth-of-type(1) {
 	position: absolute;
-	transform:translatex(-107%);
-	transition:transform .3s;
+	transform: translatex(-133%);
+	transition: transform .3s;
 }
 
 .PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) section:nth-of-type(1) {
@@ -994,29 +1068,29 @@ label {
 .PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) section:nth-of-type(2),
 .PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) section:nth-of-type(3),
 .PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) section:nth-of-type(4),
-.PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) section:nth-of-type(5)  {
+.PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) section:nth-of-type(5) {
 	padding: 0 0 1rem 0;
 	border-top: 1px solid lightgray;
 }
 
 .PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) section:nth-of-type(4) ul {
 	display: grid;
-    row-gap: 1rem;
+	row-gap: 1rem;
 	flex-direction: column;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 1rem;
 	padding: 0;
-	transition:transform .3s;
+	transition: transform .3s;
 }
 
 .PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) section:nth-of-type(4) ul li {
 	list-style: none;
 	display: flex;
-    flex-direction: column;
-    align-items: center;
+	flex-direction: column;
+	align-items: center;
 }
 
-.PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) section:nth-of-type(4) ul li img{
+.PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) section:nth-of-type(4) ul li img {
 	width: 24px;
 }
 
@@ -1031,12 +1105,12 @@ label {
 	border-top: 1px solid lightgray;
 }
 
-.PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) section:nth-of-type(6) > button:nth-of-type(1) {
+.PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) section:nth-of-type(6)>button:nth-of-type(1) {
 	background-color: var(--color-background);
 	color: var(--color-background-dark);
 }
 
-.PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) section:nth-of-type(6) > button:nth-of-type(2) {
+.PageTwo section:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) section:nth-of-type(6)>button:nth-of-type(2) {
 	background-color: var(--color-background-dark);
 	color: var(--color-background);
 }
@@ -1074,8 +1148,8 @@ footer details {
 	width: 100%;
 	margin-bottom: 3rem;
 }
-  
-footer details > summary {
+
+footer details>summary {
 	color: var(--color-background);
 	width: 100%;
 	font-family: "Nike TG", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1087,7 +1161,7 @@ footer details > summary {
 /* bron https://justmarkup.com/articles/2020-09-22-styling-and-animation-details/ */
 
 footer details summary::-webkit-details-marker {
-	display: none; 
+	display: none;
 }
 
 footer details summary {
@@ -1096,30 +1170,30 @@ footer details summary {
 	justify-content: space-between;
 }
 
-footer details summary::after { 
-	content:"+"; 
-	color: var(--color-background); 
-	margin-left: 5rem;
-}
-  
-footer details[open] summary::after { 
-	content:"-"; 
+footer details summary::after {
+	content: "+";
 	color: var(--color-background);
 	margin-left: 5rem;
 }
 
-footer details > ul {
+footer details[open] summary::after {
+	content: "-";
+	color: var(--color-background);
+	margin-left: 5rem;
+}
+
+footer details>ul {
 	padding: 0;
 }
 
-footer details > ul li {
+footer details>ul li {
 	color: var(--color-background);
 	list-style: none;
 	margin-top: 10px;
 	opacity: 0.5;
 }
-  
-footer details > ul li a {
+
+footer details>ul li a {
 	font-size: 12px;
 	color: var(--color-background);
 }
@@ -1140,7 +1214,7 @@ footer section img {
 
 footer section:last-of-type {
 	flex-direction: column;
-    display: flex;
+	display: flex;
 }
 
 footer section:last-of-type a {
@@ -1219,7 +1293,7 @@ footer section:last-of-type a {
 	header:first-of-type,
 	header:nth-of-type(2) nav:nth-of-type(2),
 	.PageTwo section:nth-of-type(1) div:first-of-type div,
-	.PageTwo section:nth-of-type(1) div:nth-of-type(1) > div:nth-of-type(1) {
+	.PageTwo section:nth-of-type(1) div:nth-of-type(1)>div:nth-of-type(1) {
 		display: flex;
 	}
 
@@ -1229,13 +1303,14 @@ footer section:last-of-type a {
 	.PageTwo section:nth-of-type(2) {
 		display: none;
 	}
-	.PageTwo section:nth-of-type(1) > div:nth-of-type(1) {
+
+	.PageTwo section:nth-of-type(1)>div:nth-of-type(1) {
 		margin-bottom: 6px;
 	}
 
-	.PageTwo section:nth-of-type(3) div:nth-of-type(1) > div:nth-of-type(2) {
+	.PageTwo section:nth-of-type(3) div:nth-of-type(1)>div:nth-of-type(2) {
 		grid-template-columns: repeat(3, 1fr);
-		transition:transform .3s;
+		transition: transform .3s;
 	}
 
 	.PageTwo section:nth-of-type(1) div:first-of-type h2 {
