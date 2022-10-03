@@ -39,11 +39,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.nike.com/nl/?cp=63928816257_search_%7cnike%7c10582771586%7c104693151076%7ce%7cc%7cNL%7cpure%7c452284024734&ds_rl=1252249&gclid=Cj0KCQjw39uYBhCLARIsAD_SzMQqJ0QOnvRCPfD9azePjZxFqYFvjoEmXgwJnNdDy6XgYrRuCUlvcqAaAtfSEALw_wcB&gclsrc=aw.ds
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Home Pagina 
+  Home Pagina
+  
   <img src="readme-images/screenshot1.PNG" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Schoenen Pagina  
+  Schoenen Pagina
+  
   <img src="readme-images/screenshot2.PNG" width="375px" alt="omschrijving van de pagina">
  
 </details>
@@ -105,6 +107,7 @@ We gingen met verschillende brilletjes om verschillende visuele beperkingen te b
 
   ### Stand van zaken
   Het meeste ging erg goed. ik had eerst moeite met grid en de @media. maar dat ging met behulp van de studentenassistent weer goed
+  
   <img src="readme-images/screenshot5.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### Agenda voor meeting
@@ -241,13 +244,21 @@ Zelf opstellen.
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
+  
   <img src="readme-images/Eindwebsite1.png" width="375px" alt="uitomst opdracht 1">
+  
   <img src="readme-images/Eindwebsite2.png" width="375px" alt="uitomst opdracht 2">
+  
   <img src="readme-images/Eindwebsite3.png" width="375px" alt="uitomst opdracht 3">
+  
   <img src="readme-images/Eindwebsite4.png" width="375px" alt="uitomst opdracht 4">
+  
   <img src="readme-images/Eindwebsite5.png" width="375px" alt="uitomst opdracht 5">
+  
   <img src="readme-images/Eindwebsite6.png" width="375px" alt="uitomst opdracht 6">
+  
   <img src="readme-images/Eindwebsite7.png" width="375px" alt="uitomst opdracht 7">
+  
   <img src="readme-images/Eindwebsite8.png" width="375px" alt="uitomst opdracht 8">
 
 
@@ -261,10 +272,18 @@ Zelf opstellen.
   ### Dit was lastig/Is niet gelukt:
   De accessibility verbeteren, ik heb het echt geprobeerd en zeker met het tappen maar er leek geen goede oplossing te zijn/ik kon die niet vinden in de tijd die ik nog overhad. 
   
-  Een klein beetje responsiveness. als je van 60 em naar lagen dan 60 em met de filter open gaat die niet weg tot dat je hem weer groter maakt zodat je de filter kan sluiten. gelt ook de andere kant op met de filter. 
+  Een klein beetje responsiveness. als je van 60 em naar lagen dan 60 em met de filter open gaat die niet weg tot dat je hem weer groter maakt zodat je de filter kan sluiten. gelt ook de andere kant op met de filter.
+  
   <img src="readme-images/verbeteren2.png" width="375px" alt="bummer">
   <img src="readme-images/verbeteren3.png" width="375px" alt="bummer">
 
+  ### Wat kon er verbeterd worden: 
+  De tap funcinaliteit kan verbeterd worden. 
+  Css kan wat efficenter/opgeschoned worden.  
+  Search kan toegevoegd worden.
+  Het lukte me niet om 1 deel van de code semantischer te maken. Op de schoenen pagina heb ik een aantal DIV's die ik zou moeten omzetten naar sections (van de filter).   bij 1 van de 2 is dat me gelukt met de tijd en de andere helaas niet.
+  Ik heb nu 3 headers. het beste zou zijn als ik ze allemaal in 1 header zet. is me niet gelukt met de tijd.
+  
 </details>
 
 
