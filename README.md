@@ -297,9 +297,9 @@ Zelf opstellen.
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1: https://stackoverflow.com/questions/5467605/add-a-space-after-an-element-using-after
-  2. bron 2: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details#a_simple_disclosure_example 
-  3. bron 3: https://justmarkup.com/articles/2020-09-22-styling-and-animation-details/
+  1. bron 1: Hoe moet ik After gebruiken. https://stackoverflow.com/questions/5467605/add-a-space-after-an-element-using-after
+  2. bron 2: Hoe werkt details https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details#a_simple_disclosure_example 
+  3. bron 3: Hoe kan ik details beter stylen https://justmarkup.com/articles/2020-09-22-styling-and-animation-details/
   4. bron 4: Studentenassistenten (toppers)
 
 </details>
