@@ -277,6 +277,13 @@ Zelf opstellen.
   <img src="readme-images/verbeteren2.png" width="375px" alt="bummer">
   <img src="readme-images/verbeteren3.png" width="375px" alt="bummer">
 
+  ### Wat kon er verbeterd worden: 
+  De tap funcinaliteit kan verbeterd worden. 
+  Css kan wat efficenter/opgeschoned worden.  
+  Search kan toegevoegd worden.
+  Het lukte me niet om 1 deel van de code semantischer te maken. Op de schoenen pagina heb ik een aantal DIV's die ik zou moeten omzetten naar sections (van de filter).   bij 1 van de 2 is dat me gelukt met de tijd en de andere helaas niet.
+  Ik heb nu 3 headers. het beste zou zijn als ik ze allemaal in 1 header zet. is me niet gelukt met de tijd.
+  
 </details>
 
 
